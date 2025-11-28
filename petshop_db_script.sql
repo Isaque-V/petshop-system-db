@@ -76,3 +76,6 @@ WHERE descricao = 'Banho e Tosa Completa';
 -- Remover o cliente 'Carla Souza' (e todos os seus pets, se houver, dependendo da restrição ON DELETE)
 DELETE FROM Clientes
 WHERE nome = 'Carla Souza';
+-- 5. EVOLUÇÃO DO ESQUEMA (Adicionando o campo 'endereco' à tabela Clientes)
+ALTER TABLE Clientes
+ADD COLUMN endereco VARCHAR(255);
